@@ -12,6 +12,5 @@ build: [
 ]
 install: ["echo" "working install script for dep-on-baddeps"]
 remove: ["echo" "removed dep-on-baddeps"]
-depends: [
-]
+depends: [ "baddeps-on-402" ]
 available: [ocaml-version >= "4.01.0"]

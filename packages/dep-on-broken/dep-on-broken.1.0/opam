@@ -12,6 +12,5 @@ build: [
 ]
 install: ["echo" "working install script for dep-on-broken"]
 remove: ["echo" "removed dep-on-broken"]
-depends: [
-]
+depends: [ "broken-on-401" ]
 available: [ocaml-version >= "4.01.0"]

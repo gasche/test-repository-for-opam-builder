@@ -12,6 +12,5 @@ build: [
 ]
 install: ["echo" "working install script for dep-on-good"]
 remove: ["echo" "removed dep-on-good"]
-depends: [
-]
+depends: [ "good" ]
 available: [ocaml-version >= "4.01.0"]
