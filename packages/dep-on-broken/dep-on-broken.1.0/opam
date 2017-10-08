@@ -1,0 +1,17 @@
+opam-version: "1.2"
+name: "dep-on-broken"
+maintainer: "gabriel.scherer@gmail.com"
+authors: "gabriel.scherer@gmail.com"
+homepage: "https://github.com/gasche/test-repository-for-opam-builder"
+bug-reports: "https://github.com/gasche/test-repository-for-opam-builder/issues"
+dev-repo: "https://github.com/gasche/test-repository-for-opam-builder.git"
+license: "LGPL-2.1+ with OCaml linking exception"
+doc: "https://github.com/gasche/test-repository-for-opam-builder"
+build: [
+  ["echo" "working build!"]
+]
+install: ["echo" "working install script for dep-on-broken"]
+remove: ["echo" "removed dep-on-broken"]
+depends: [
+]
+available: [ocaml-version >= "4.01.0"]

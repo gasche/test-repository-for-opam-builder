@@ -1,0 +1,18 @@
+opam-version: "1.2"
+name: "baddeps-on-402"
+maintainer: "gabriel.scherer@gmail.com"
+authors: "gabriel.scherer@gmail.com"
+homepage: "https://github.com/gasche/test-repository-for-opam-builder"
+bug-reports: "https://github.com/gasche/test-repository-for-opam-builder/issues"
+dev-repo: "https://github.com/gasche/test-repository-for-opam-builder.git"
+license: "LGPL-2.1+ with OCaml linking exception"
+doc: "https://github.com/gasche/test-repository-for-opam-builder"
+build: [
+  ["echo" "this package has broken dependencies under 4.02"]
+]
+install: ["echo" "working install script for baddeps-on-402"]
+remove: ["echo" "removed baddeps-on-402"]
+depends: [
+  "non-existing-package" {ocaml-version >= "4.02.0"}
+]
+available: [ocaml-version >= "4.01.0"]

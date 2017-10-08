@@ -1,0 +1,17 @@
+opam-version: "1.2"
+name: "broken-on-401"
+maintainer: "gabriel.scherer@gmail.com"
+authors: "gabriel.scherer@gmail.com"
+homepage: "https://github.com/gasche/test-repository-for-opam-builder"
+bug-reports: "https://github.com/gasche/test-repository-for-opam-builder/issues"
+dev-repo: "https://github.com/gasche/test-repository-for-opam-builder.git"
+license: "LGPL-2.1+ with OCaml linking exception"
+doc: "https://github.com/gasche/test-repository-for-opam-builder"
+build: [
+  ["exit" "2"] {ocaml-version = "4.01.0"}
+]
+install: ["echo" "working install script -- the build should have failed"]
+remove: ["echo" "removed broken-on-401"]
+depends: [
+]
+available: [ocaml-version >= "4.01.0"]
